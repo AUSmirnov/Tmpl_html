@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>adm_rus · Вход</title>
+  <title>HostOFF_Pol · Вход</title>
   <!-- Font Awesome для иконок -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
@@ -21,7 +21,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at 20% 30%, #e9f2fa 0%, #d4e3f0 100%);
+      /* Тёмный нейтральный фон */
+      background: radial-gradient(circle at 20% 30%, #3a4a5a 0%, #1f2b32 100%);
       position: relative;
       padding: 1.5rem;
     }
@@ -30,10 +31,10 @@
       content: "";
       position: fixed;
       inset: 0;
-      background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><path d="M0 600 Q 300 450 600 550 T 1200 500 L 1200 800 L 0 800 Z" fill="%23ffffff20" /><circle cx="950" cy="150" r="180" fill="%23ffffff15" /><circle cx="200" cy="700" r="220" fill="%23aac9e420" /></svg>');
+      background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><path d="M0 600 Q 300 450 600 550 T 1200 500 L 1200 800 L 0 800 Z" fill="%2300000015" /><circle cx="950" cy="150" r="180" fill="%2300000010" /><circle cx="200" cy="700" r="220" fill="%2300000010" /></svg>');
       background-size: cover;
       background-position: center;
-      opacity: 0.5;
+      opacity: 0.6;
       pointer-events: none;
       z-index: 0;
     }
@@ -396,7 +397,7 @@
       <a href="#" id="termsMock">Лицензия</a>
     </div>
     <div style="width:100%; margin-top: 8px; opacity: 0.7;">
-      <i class="far fa-copyright"></i> ufo_ger
+      <i class="far fa-copyright"></i> HostOFF_Pol
     </div>
   </div>
 </div>
@@ -474,13 +475,13 @@
     // Двойной клик по логотипу
     const brandIcon = document.querySelector('.brand-icon');
     brandIcon.addEventListener('dblclick', function() {
-      showToast('✨ adm_rus · интерфейс стартовой страницы');
+      showToast('✨ HostOFF_Pol · интерфейс стартовой страницы');
     });
 
     // Приветственное сообщение при загрузке
     window.addEventListener('load', function() {
       setTimeout(() => {
-        showToast('✅ adm_rus — все поля активны');
+        showToast('✅ HostOFF_Pol — все поля активны');
       }, 400);
     });
 
