@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>HostOFF_Pol · Вход</title>
+  <title>SauCloud · Вход</title>
   <!-- Font Awesome для иконок -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
@@ -21,7 +21,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      /* Тёмный нейтральный фон */
       background: radial-gradient(circle at 20% 30%, #3a4a5a 0%, #1f2b32 100%);
       position: relative;
       padding: 1.5rem;
@@ -344,7 +343,7 @@
   <div class="brand">
     <div class="brand-icon">
       <i class="fas fa-cloud-upload-alt"></i>
-      <span>TerraMaster</span>
+      <span>SauCloud</span>
     </div>
     <div class="brand-tagline">TOS 6 · Стартовая страница</div>
   </div>
@@ -475,13 +474,13 @@
     // Двойной клик по логотипу
     const brandIcon = document.querySelector('.brand-icon');
     brandIcon.addEventListener('dblclick', function() {
-      showToast('✨ HostOFF_Pol · интерфейс стартовой страницы');
+      showToast('✨ SauCloud · интерфейс стартовой страницы');
     });
 
     // Приветственное сообщение при загрузке
     window.addEventListener('load', function() {
       setTimeout(() => {
-        showToast('✅ HostOFF_Pol — все поля активны');
+        showToast('✅ SauCloud — все поля активны');
       }, 400);
     });
 
